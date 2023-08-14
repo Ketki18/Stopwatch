@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnStop.setBackgroundResource(R.drawable.gradientbtn);
                 handler.removeCallbacks(runnable);
                 btnStart.setEnabled(true);
                 btnStop.setEnabled(false);
